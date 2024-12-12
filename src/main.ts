@@ -14,7 +14,7 @@ const findKthLargest = (nums: number[], k: number) => {
     if (nums[i] > heap[0]) {
       heap.shift(); // Remove the smallest element
       heap.push(nums[i]);
-      heap.sort((a, b) => a - b); // Re-heapify
+      heap.sort((a, b) => a - b);
     }
   }
 
